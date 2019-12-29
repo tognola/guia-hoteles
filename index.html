@@ -10,11 +10,33 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+
+    <nav class="navbar navbar-dark navbar-expand-md bg-dark fixed-top">
+      <a class="navbar-brand" href="/">Guía hoteles</a>
+      <button class="navbar-toggler"  data-toggle="collapse" data-target="#navbarSupportedContent" type="button" name="button"  aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto" >
+          <li class="nav-item active"><a class="nav-link" href="#">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Precios</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Términos y condiciones</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+        </ul>
+      </div>
+    </nav>
     <div class="jumbotron">
       <h1>Hoteles</h1>
     </div>
       <div class="container">
-        <div class="d-flex">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item" aria-current="page">Inicio</li>
+          </ol>
+        </nav>
+
+        <div class="row">
           <div class="col-sm-4">
             <p>
               <h1>¿Cómo funciona?</h1>
@@ -115,12 +137,14 @@
           </div>
           <div class="col-sm-4">
             <address class="">
-              Calle n° 256
+              <h4>Oficina central</h4>
+              <p>Calle n° 256</p>
             </address>
           </div>
           <div class="col-sm-4 d-flex flex-column align-items-end">
+            <a href="#">Nosotros</a>
+            <a href="#">Precios</a>
             <a href="#">Términos y condiciones</a>
-            <a href="#">Sobre nosotros</a>
             <a href="#">Contacto</a>
           </div>
 
